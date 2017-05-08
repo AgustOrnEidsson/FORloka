@@ -22,7 +22,7 @@ if fjoldi==1:
         listicom.append(listinn[com])
         listiplay.append(listinn[play])
     print("-----Þá byrjar þetta-----")
-    while len(listicom)!=52 and len(listiplay)!=52:
+    while len(listicom)!=0 and len(listiplay)!=0:
         kindplay=[]
         kindcom=[]
         kindplay=str(listiplay[0])
@@ -162,7 +162,7 @@ if fjoldi==2:
                     listiplay.append(winnerspil[1])
         else:
             print("Rangur innsláttur")
-    if len(listiplay)==52:
-        print("Spilari Eitt vann!!!")
-    elif len(listicom)==52:
+    if len(listiplay)==0:
         print("Spilari Tvö vann!!!")
+    elif len(listicom)==0:
+        print("Spilari Eitt vann!!!")
